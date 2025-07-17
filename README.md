@@ -7,6 +7,11 @@
 This project demonstrates a complete DevOps transformation of the OpenTelemetry Demo application, showcasing enterprise-grade practices in **microservices architecture**, **container orchestration**, **observability**, and **CI/CD pipeline implementation**. The transformation migrated from a monolithic deployment to a fully containerized, cloud-native microservices architecture with comprehensive monitoring and automated deployment capabilities.
 
 ---
+## 💰 Cost Management
+- **EKS Cluster:** Deployed with Terraform, scaled down to avoid $16/month load balancer costs
+- **GitHub Actions:** Implemented CI/CD pipeline with automated testing and deployment
+- **ArgoCD:** Configured GitOps workflow for automated deployments
+---
 
 ## System Architecture & Design
 
