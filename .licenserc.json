@@ -38,8 +38,6 @@
     ],
     "ignore": [
         "node_modules/",
-        "src/accounting/bin/",
-        "src/accounting/obj/",
         "/src/accounting/src/protos/",
         "src/cart/src/obj/",
         "src/cart/tests/obj/",
@@ -54,7 +52,6 @@
         "src/react-native-app/expo-env.d.ts",
         "src/recommendation/demo_pb2.py",
         "src/recommendation/demo_pb2_grpc.py",
-        "src/frontend/protos/demo.ts",
         "internal/tools/"
     ]
   }
