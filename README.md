@@ -1,4 +1,4 @@
-#posting dmo video soon . its long so abjdbjhad
+#posting dmo video soon . its long so abjdbjhad.-I implemented ArgoCD initially but simplified to GitHub Actions for the final deployment.I will be adding terraform soon today or tmr.
 
 #  End to end Pipeline- OpenTelemetry Demo Transformation
 
