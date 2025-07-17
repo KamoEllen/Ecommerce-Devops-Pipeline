@@ -12,9 +12,12 @@ This project demonstrates a complete DevOps transformation of the OpenTelemetry 
 - **GitHub Actions:** Implemented CI/CD pipeline with automated testing and deployment
 - **ArgoCD:** Configured GitOps workflow for automated deployments
 ---
-[![Watch the video](https://img.youtube.com/vi/_yjDVuh-XzA/0.jpg)](https://www.youtube.com/watch?v=_yjDVuh-XzA)
 
+## ▶Click the video below to watch
 
+[![Watch the video](https://img.youtube.com/vi/_yjDVuh-XzA/maxresdefault.jpg)](https://www.youtube.com/watch?v=_yjDVuh-XzA)
+
+---
 ## System Architecture & Design
 
 ### **Architecture Overview**
