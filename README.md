@@ -13,6 +13,8 @@ This project demonstrates a complete DevOps transformation of the OpenTelemetry 
 - **ArgoCD:** Configured GitOps workflow for automated deployments
 ---
 
+![vid](https://github.com/KamoEllen/Ecommerce-Devops-Pipeline/blob/main/pb/demo/time-lapses_final.gif)
+
 ## System Architecture & Design
 
 ### **Architecture Overview**
