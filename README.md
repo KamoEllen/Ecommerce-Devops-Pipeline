@@ -7,11 +7,9 @@ I migrated the open-source OpenTelemetry Demo—a pre-built microservices applic
 This implementation focused heavily on building secure, autoscaling infrastructure on AWS using Terraform and EKS, while prioritizing production readiness, cost-awareness, and system observability. While I maintained all core services from the demo, I focused the majority of my work on three services that most directly impact user-facing load and traffic: **Product Catalog**, **Recommendation**, and **Frontend Proxy**.
 
 ---
-
 ## ▶Click the video below to watch
 
 [![Watch the video](https://img.youtube.com/vi/_yjDVuh-XzA/maxresdefault.jpg)](https://www.youtube.com/watch?v=_yjDVuh-XzA)
-
 
 ---
 
@@ -118,6 +116,18 @@ Services deployed:
 
 ### Deployment Strategy
 
+### CI/CD Pipeline
+
+The Product Catalog service is integrated with a GitHub Actions CI/CD pipeline defined in `.github/workflows/product-catalog-ci.yaml`. The pipeline automates the full lifecycle of changes to this service:
+
+* **Build & Unit Test:** Go code is compiled and tested on each pull request to `main`.
+* **Linting:** `golangci-lint` ensures code adheres to quality standards.
+* **Docker Image Build:** A Docker image is built and pushed to Docker Hub using secure credentials.
+* **Kubernetes Manifest Update:** The Kubernetes deployment YAML is updated with the new image tag.
+* **Auto-Commit & Push:** Changes to the manifest are committed and pushed back to `main` (with a fast-forward strategy).
+
+This pipeline ensures that any change to the product catalog service is automatically built, validated, containerized, and prepared for deployment — reducing manual intervention and deployment risk.
+
 * Used blue-green deployments to ensure zero-downtime rollouts
 * Ingress managed via ALB Ingress Controller
 * Security best practices enforced: non-root containers, defined user IDs, resource quotas
@@ -138,7 +148,7 @@ Services deployed:
 
 ## Areas for Improvement
 
-* Implement full CI/CD pipeline (e.g., GitHub Actions with ArgoCD)
+* Extend CI/CD coverage beyond Product Catalog to all services. Integrate multi-service pipelines using GitHub Actions or ArgoCD, add deployment approvals, rollback mechanisms, and cross-environment promotion.
 * Add Amazon RDS to reintroduce persistent database use cases
 * Expand alerting and synthetic monitoring coverage
 * Add autoscaling (HPA, Cluster Autoscaler) for cost-performance optimization
@@ -146,4 +156,3 @@ Services deployed:
 ## Conclusion
 
 This project demonstrates my ability to translate theoretical DevOps knowledge into a scalable, observable, cloud-native production system. Through targeted service tuning, resilient infrastructure setup, and observability maintenance, I’ve developed a platform-ready deployment that balances tradeoffs in performance, cost, and complexity. It showcases my capacity to own and ship DevOps systems end-to-end.
-
