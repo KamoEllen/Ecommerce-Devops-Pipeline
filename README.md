@@ -21,6 +21,8 @@
 
 ---
 
+![img](https://github.com/KamoEllen/Ecommerce-Devops-Pipeline/blob/main/diagram.png) 
+
 ## **Project Overview**
 
 Migrated the **OpenTelemetry Demo** microservices application to **AWS EKS**, building secure, autoscaling infrastructure with observability, fault tolerance, and production-ready DevOps practices.
