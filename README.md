@@ -6,8 +6,6 @@
 ---
 -->
 
-![img](https://github.com/KamoEllen/Ecommerce-Devops-Pipeline/blob/main/diagram.png) 
-
 ## **Table of Contents**
 
 1. [Project Overview](#project-overview)
@@ -43,7 +41,7 @@ Migrated the **OpenTelemetry Demo** microservices application to **AWS EKS**, im
 
 ## **System Architecture**
 
-### **High-Level Visual (Eraser Diagram)**
+### **High-Level Visual **
 
 ![Ecommerce DevOps Pipeline Diagram](https://github.com/KamoEllen/Ecommerce-Devops-Pipeline/blob/main/diagram.png)
 
